@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-lg-6" style="padding-bottom: 10px;border-color: white; color: white;">
+        <table>
+          <tr *ngFor="let soccergame of soccer | slice: 0:3">
+            <p>{{soccergame.start_time}} {{soccergame.event}}</p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" (click) = "addBet(soccergame, soccergame.hometeam, 'HomeWin', soccergame.homeodds)">{{soccergame.hometeam}} {{soccergame.homeodds}}</button>
+                <button type="button" class="btn btn-secondary" (click) = "addBet(soccergame, '', 'Draw', soccergame.drawodds)">Draw {{soccergame.drawodds}}</button>
+                <button type="button" class="btn btn-secondary" (click) = "addBet(soccergame, soccergame.awayteam, 'AwayWin', soccergame.awayodds)">{{soccergame.awayteam}} {{soccergame.awayodds}}</button>
+              </div>  
+          </tr>
+        </table>
+    </div>
+    
+    <div class="col-lg-6" style="padding-bottom: 10px;border-color: white; color: white;">
+      <table>
+        <tr *ngFor="let soccergame of soccer | slice: -3">
+          <p>{{soccergame.start_time}} {{soccergame.event}}</p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary" (click) = "addBet(soccergame, soccergame.hometeam, 'HomeWin', soccergame.homeodds)">{{soccergame.hometeam}} {{soccergame.homeodds}}</button>
+              <button type="button" class="btn btn-secondary" (click) = "addBet(soccergame, '', 'Draw', soccergame.drawodds)">Draw {{soccergame.drawodds}}</button>
+              <button type="button" class="btn btn-secondary" (click) = "addBet(soccergame, soccergame.awayteam, 'AwayWin', soccergame.awayodds)">{{soccergame.awayteam}} {{soccergame.awayodds}}</button>
+            </div>  
+        </tr>
+      </table>
+    </div>
+</div>
