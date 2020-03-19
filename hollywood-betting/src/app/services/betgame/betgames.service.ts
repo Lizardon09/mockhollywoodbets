@@ -10,15 +10,16 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class BetgamesService {
 
   private gamesurl : string = "/assets/data/betgames.json"
+  private gamesurl2: string = "https://localhost:44376/api/sport"
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  constructor(private http : HttpClient) { }
+  constructor(private http : HttpClient) {}
 
   getGames() : Observable<IBetgame[]>{
-    return this.http.get<IBetgame[]>(this.gamesurl);
+    return this.http.get<IBetgame[]>(this.gamesurl2);
   }
 
 }
