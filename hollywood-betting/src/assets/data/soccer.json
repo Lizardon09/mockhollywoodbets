@@ -7,7 +7,8 @@
         "awayteam": "Steve Biko",
         "homeodds": 1.3,
         "drawodds": 1.6,
-        "awayodds": 2.4
+        "awayodds": 2.4,
+        "countrycode": "GM"
     },
 
     {
@@ -18,7 +19,8 @@
         "awayteam": "Jamhuri",
         "homeodds": 1.2,
         "drawodds": 1.62,
-        "awayodds": 2.6
+        "awayodds": 2.6,
+        "countrycode": "GM"
     },
 
     {
@@ -29,7 +31,8 @@
         "awayteam": "PSV Wellingans",
         "homeodds": 3.2,
         "drawodds": 1.87,
-        "awayodds": 0.9
+        "awayodds": 0.9,
+        "countrycode": "GM"
     },
 
     {
@@ -40,7 +43,8 @@
         "awayteam": "ASC Entertainers",
         "homeodds": 1.5,
         "drawodds": 2,
-        "awayodds": 1.62
+        "awayodds": 1.62,
+        "countrycode": "MR"
     },
 
     {
@@ -51,7 +55,8 @@
         "awayteam": "Al-Rayyan",
         "homeodds": 9,
         "drawodds": 6,
-        "awayodds": 0.6
+        "awayodds": 0.6,
+        "countrycode": "QA"
     },
 
     {
@@ -62,6 +67,7 @@
         "awayteam": "ASC Entertainers",
         "homeodds": 3.2,
         "drawodds": 1.87,
-        "awayodds": 0.9
+        "awayodds": 0.9,
+        "countrycode": "MR"
     }
 ]
