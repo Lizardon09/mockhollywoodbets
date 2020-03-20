@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule }    from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { SoccergamesComponent } from './soccergames/soccergames.component';
+import { CountriesComponent } from './countries/countries.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SoccergamesComponent } from './soccergames/soccergames.component';
     BetslipComponent,
     FooterComponent,
     DashboardComponent,
-    SoccergamesComponent
+    SoccergamesComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule,

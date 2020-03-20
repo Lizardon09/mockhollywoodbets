@@ -21,7 +21,6 @@ export class SoccergamesComponent implements OnInit {
   ngOnInit(): void {
     this.soccerservice.getSoccer()
     .subscribe(soccergames => this.soccer=soccergames);
-    console.log(this.soccer);
   }
 
   addBet(bet:ISoccer, player:string, condition:string, odds:number) : void{

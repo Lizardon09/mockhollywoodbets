@@ -4,6 +4,7 @@ import { IBetgame } from '../services/betgame/betgame';
 import { Observable, Subject, combineLatest } from 'rxjs';
 import {FormControl} from '@angular/forms';
 import {debounceTime, distinctUntilChanged, switchMap, startWith, map} from 'rxjs/operators';
+import { ICountry } from '../services/betgame/country';
 
 @Component({
   selector: 'app-side-nav',
@@ -19,6 +20,8 @@ export class SideNavComponent implements OnInit {
   filteredGames$:Observable<IBetgame[]>;
   filter: FormControl;
   filter$:Observable<string>;
+
+  countries:Observable<ICountry[]>;
 
   ngOnInit(): void {
     this.sideNavSearch();
